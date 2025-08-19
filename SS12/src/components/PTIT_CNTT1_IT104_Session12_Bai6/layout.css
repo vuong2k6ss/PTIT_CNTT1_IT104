@@ -1,0 +1,40 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header */
+.header {
+  background: #d1d5db;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background: #d1d5db;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Nội dung chính chia 2 cột: Menu + Main */
+.content {
+  display: flex;
+  flex: 1;
+}
+
+/* Menu bên trái */
+.menu {
+  background: #1e3a8a;
+  color: white;
+  padding: 10px;
+  width: 200px;
+}
+
+/* Main chiếm phần còn lại */
+.main {
+  flex: 1;
+  background: white;
+  padding: 10px;
+}

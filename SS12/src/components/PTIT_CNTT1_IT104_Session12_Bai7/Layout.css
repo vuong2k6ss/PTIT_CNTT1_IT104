@@ -1,0 +1,90 @@
+/* Layout tổng */
+.ul-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header + Navbar */
+.ul-header {
+  background: #cfd4db;        /* xám nhạt */
+  text-align: center;
+  padding: 10px 12px;
+  font-weight: 500;
+}
+.ul-navbar {
+  background: #aeb4bf;        /* xám đậm hơn */
+  text-align: center;
+  padding: 8px 12px;
+}
+
+/* Thân trang: Menu | Main | Article */
+.ul-body {
+  display: flex;
+  gap: 0;
+  flex: 1;
+  min-height: 0;
+}
+
+/* Menu trái (màu xanh lá) */
+.ul-menu {
+  width: 180px;
+  background: #16a34a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Article phải (màu xanh dương) */
+.ul-article {
+  width: 220px;
+  background: #93c5fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Vùng Main ở giữa */
+.ul-main-wrap {
+  flex: 1;
+  padding: 20px;
+  background: #f3f4f6;        /* nền xám rất nhạt để nổi viền khung trắng */
+}
+
+/* Panel trắng giống hình */
+.ul-main {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Chữ "Main" ở giữa trên */
+.ul-main-title {
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* Lưới các Cart */
+.ul-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+/* Ô Cart viền hồng nhạt như hình */
+.ul-cart {
+  height: 80px;
+  border: 2px solid #f3c4c4;
+  background: #fffafa;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
