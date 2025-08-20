@@ -27,17 +27,17 @@ export default class Apps extends Component<object, State> {
   render() {
     const { theme, language } = this.state;
 
-    const containerStyle: React.CSSProperties = {
-      backgroundColor: theme === "light" ? "white" : "black",
-      color: theme === "light" ? "black" : "white",
-      padding: "20px",
-      margin: "20px",
-      border: "1px solid gray",
-    };
-
     return (
       <div>
-        <div style={containerStyle}>
+        <div
+          style={{
+            backgroundColor: theme === "light" ? "white" : "black",
+            color: theme === "light" ? "black" : "white",
+            padding: "20px",
+            margin: "20px",
+            border: "1px solid gray",
+          }}
+        >
           <h3>Nền: {theme === "light" ? "Sáng" : "Tối"}</h3>
           <h3>
             Ngôn ngữ: {language === "english" ? "English" : "Tiếng Việt"}
