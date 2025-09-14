@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function processArray(arr, callback) {
+        arr.forEach((element, index) => {
+          setTimeout(() => {
+            callback(element, index);
+          }, 1000 * (index + 1));
+        });
+      }
+
+      function printElement(element, index) {
+        console.log(`Phần tử thứ: ${element}`);
+      }
+
+      const numbers = [1, 2, 3, 4, 5];
+      processArray(numbers, printElement);
+    </script>
+  </body>
+</html>

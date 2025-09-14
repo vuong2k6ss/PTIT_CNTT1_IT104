@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calculator(a, b, callBack) {
+        const sum = a + b;
+        callBack(sum);
+      }
+
+      function printfResult(result) {
+        console.log("Ket qua la:", result);
+      }
+      calculator(5, 7, printfResult);
+    </script>
+  </body>
+</html>

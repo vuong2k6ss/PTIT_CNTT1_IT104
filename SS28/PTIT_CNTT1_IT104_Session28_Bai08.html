@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function myFilter(array, searchValue, callback) {
+        const result = [];
+        for (let i = 0; i < array.length; i++) {
+          if (callback(array[i], searchValue, i, array)) {
+            result.push(array[i]);
+          }
+        }
+        return result;
+      }
+
+      function callback(element, searchValue) {
+        return element === searchValue;
+      }
+
+      const numbers = [1, 2, 2, 3, 4, 5, 6];
+
+      console.log(myFilter(numbers, 2, callback));
+      console.log(myFilter(numbers, 10, callback));
+    </script>
+  </body>
+</html>
