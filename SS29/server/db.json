@@ -1,0 +1,76 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "product_name": "but bi",
+      "image": "idk",
+      "price": 3,
+      "quantity": 4,
+      "created_at": 5
+    },
+    {
+      "id": 2,
+      "product_name": "but chi",
+      "image": "idk",
+      "price": 3,
+      "quantity": 4,
+      "created_at": 5
+    },
+    {
+      "id": 3,
+      "product_name": "quat tay",
+      "image": "idk",
+      "price": 3,
+      "quantity": 4,
+      "created_at": 5
+    },
+    {
+      "id": 4,
+      "product_name": "dieu hoa",
+      "image": "idk",
+      "price": 3,
+      "quantity": 4,
+      "created_at": 5
+    },
+    {
+      "id": 5,
+      "product_name": "tu lanh",
+      "image": "idk",
+      "price": 3,
+      "quantity": 4,
+      "created_at": 5
+    }
+  ],
+  "student": [
+    {
+      "id": 1,
+      "student_name": "Nguyen Van A",
+      "email": "nva@gmail.com",
+      "address": "Ha Noi",
+      "phone": "0123456789",
+      "status": false,
+      "created_at": "2 day",
+      "date_of_birth": "15/9/2025"
+    },
+    {
+      "id": 2,
+      "student_name": "Nguyen Van B",
+      "email": "nvb@gmail.com",
+      "address": "Ha Noi",
+      "phone": "0123456789",
+      "status": false,
+      "created_at": "2 day",
+      "date_of_birth": "15/9/2025"
+    },
+    {
+      "id": 3,
+      "student_name": "Nguyen Van C",
+      "email": "nvc@gmail.com",
+      "address": "Ha Noi",
+      "phone": "0123456789",
+      "status": false,
+      "created_at": "2 day",
+      "date_of_birth": "15/9/2025"
+    }
+  ]
+}
