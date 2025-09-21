@@ -4,20 +4,17 @@ import type { ChangeEvent, FormEvent } from "react";
 type StateType = {
   productCode: string;
   productName: string;
-  price: string; // đổi sang string để có thể để trống
+  price: string; 
   quantity: number;
 };
 
-export default class ProductForm extends Component<
-  Record<string, never>,
-  StateType
-> {
+export default class ProductForm extends Component<Record<string, never>,StateType> {
   constructor(props: Record<string, never>) {
     super(props);
     this.state = {
       productCode: "",
       productName: "",
-      price: "", // ban đầu để trống, user sẽ nhập
+      price: "", 
       quantity: 1,
     };
   }

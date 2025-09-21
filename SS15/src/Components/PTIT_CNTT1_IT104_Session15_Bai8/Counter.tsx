@@ -9,7 +9,6 @@ export default class Counter extends Component<object, CounterState> {
 
   constructor(props: object) {
     super(props);
-    // Khởi tạo state với count = 0
     this.state = { count: 0 };
   }
 

@@ -11,9 +11,8 @@ export default class Exersice01 extends Component<
   constructor(props: Record<string, unknown>) {
     super(props);
 
-    // Khởi tạo state trong vòng đời Mounting
     this.state = {
-      userName: "Bùi Minh Vũ",
+      userName: "Phùng Văn Vượng",
     };
   }
 

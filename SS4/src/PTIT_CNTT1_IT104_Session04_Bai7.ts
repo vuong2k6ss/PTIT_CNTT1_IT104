@@ -1,4 +1,4 @@
-// kiểm tra chuỗi có phải toàn số không
+
 const isFullNumber = (target : string) : boolean => {
     let check = Number(target);
     if(Number.isNaN(check)){

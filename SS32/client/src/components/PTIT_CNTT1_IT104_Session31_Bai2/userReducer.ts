@@ -1,5 +1,3 @@
-// src/PTIT_CNTT1_IT104_Session31_Bai2/userReducer.ts
-
 export type User = {
   id: number;
   userName: string;

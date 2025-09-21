@@ -26,8 +26,6 @@ const calculateOrderTotal = (order : Order) : number => {
     return total;
 }
 
-
-
 const printOrder  = (order : Order) : void => {
     console.log("Đơn hàng: ", order.orderId);
     console.log("Khách hàng: ", order.customerName);

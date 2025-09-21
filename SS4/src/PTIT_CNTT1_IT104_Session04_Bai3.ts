@@ -13,5 +13,4 @@ function SinhVien(SinhVien: Students): void {
     console.log(`tên tôi là ${SinhVien.name}, tôi ${SinhVien.age} tuổi , email của tôi là ${SinhVien.email} `);
 }
 
-
 SinhVien(student1);

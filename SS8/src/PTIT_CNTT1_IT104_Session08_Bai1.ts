@@ -8,6 +8,7 @@ enum weekDays {
     Sunday = "Chủ Nhật"
 }
 
+
 for (const day in weekDays) {
     console.log(weekDays[day as keyof typeof weekDays]);
 }

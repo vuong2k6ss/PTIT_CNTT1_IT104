@@ -4,10 +4,7 @@ type StateType = {
   company: string;
 };
 
-export default class Company extends Component<
-  Record<string, never>,
-  StateType
-> {
+export default class Company extends Component<Record<string, never>,StateType> {
   constructor(props: Record<string, never>) {
     super(props);
 
@@ -21,9 +18,7 @@ export default class Company extends Component<
   handleChange = () => {
     this.setState({
       company:
-        this.state.company === "Rikkei Academy"
-          ? "RikkeiSoft"
-          : "Rikkei Academy",
+        this.state.company === "Rikkei Academy"? "RikkeiSoft": "Rikkei Academy",
     });
   };
 

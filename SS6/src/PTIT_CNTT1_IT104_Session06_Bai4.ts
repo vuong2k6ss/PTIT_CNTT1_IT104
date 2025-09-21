@@ -3,6 +3,7 @@ interface Geometry {
     calculatePerimeter(): number;
 }
 
+
 class Circle implements Geometry {
     private radius: number;
 
