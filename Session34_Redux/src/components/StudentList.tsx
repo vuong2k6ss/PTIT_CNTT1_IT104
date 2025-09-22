@@ -7,25 +7,23 @@ import {
   TableHead,
   TableRow,
 } from '@mui/material';
-
 import React from 'react';
 import type { Student } from '../utils/types';
 import { useAppDispatch, useAppSelector } from '../hooks/useRedux';
 
 interface StudentListProps {
   students: Student[];
+  onEdit: (student: Student) => void;
 }
 
-const StudentList: React.FC<StudentListProps> = () => {
-  const dispatch = useAppDispatch()
-  const {student: students} =  useAppSelector((store)=> store)
+const StudentList: React.FC<StudentListProps> = ({  onEdit }) => {
+  const dispatch = useAppDispatch();
+  const { student: reduxStudents } = useAppSelector((store) => store);
 
-  // hàm xóa sinh viên
   const handleDelete = (id: string) => {
-  dispatch({type: "DELETE", payload: {id: id}})
-  }
+    dispatch({ type: 'DELETE', payload: { id } });
+  };
 
-  
   return (
     <TableContainer>
       <Table>
@@ -39,7 +37,7 @@ const StudentList: React.FC<StudentListProps> = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {students.map((s, i) => (
+          {reduxStudents.map((s, i) => (
             <TableRow key={s.id}>
               <TableCell>{i + 1}</TableCell>
               <TableCell>{s.id}</TableCell>
@@ -50,10 +48,10 @@ const StudentList: React.FC<StudentListProps> = () => {
                   <Button variant="contained" color="error">
                     Xem
                   </Button>
-                  <Button variant="contained" color="warning">
+                  <Button variant="contained" color="warning" onClick={() => onEdit(s)}>
                     Sửa
                   </Button>
-                  <Button onClick={() => handleDelete(s.id || "")} variant="contained" color="success">
+                  <Button onClick={() => handleDelete(s.id || '')} variant="contained" color="success">
                     Xóa
                   </Button>
                 </div>
