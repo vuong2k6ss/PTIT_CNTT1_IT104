@@ -1,0 +1,25 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Người Sói",
+      "author": "Peter",
+      "year": 1980,
+      "category": "Alibaba"
+    },
+    {
+      "id": 2,
+      "title": "Người dơi",
+      "author": "Robber",
+      "year": "1987",
+      "category": "S-vip"
+    },
+    {
+      "id": 3,
+      "title": "Người Nhện",
+      "author": "Kaito",
+      "year": 1999,
+      "category": "KOB"
+    }
+  ]
+}
